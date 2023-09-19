@@ -1,0 +1,59 @@
+#cookie {
+    width: 100%;
+    min-width: 100px;
+    max-width: 200px;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    margin-left: 50%;
+    margin-top: 25%;
+}
+
+#dmg {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 12%;
+    width: 25%;
+    visibility: hidden;
+}
+
+#skin {
+    position: absolute;
+    width: 4%;
+    margin-left: 60%;
+    margin-top: 20%;
+}
+
+#cookie:hover {
+    cursor: pointer;
+}
+
+#counter {
+    color: orange;
+    text-align: center;
+    transform: translate(0, -300%);
+    font-size: 30px;
+}
+
+.scale {
+    animation-name: anim;
+    animation-duration: 0.3s;
+}
+
+@keyframes anim {
+    0% {
+        scale: 1;
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        scale: 1.25;
+        transform: translate(-40%, -40%);
+    }
+    100% {
+        scale: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+body {
+    background-image:url("../img/background.png");
+}
